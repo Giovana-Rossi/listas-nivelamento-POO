@@ -28,8 +28,9 @@ public class Ex06 {
     }
 
     String compute(double L, double a, double c, double m) {
-        String output = null;
-        //put your logic here
-        return output;
+        double areaTotal = L * a;
+        int quantLatas= (int) Math.ceil(areaTotal / m);
+        double custoTotal = quantLatas * c;
+        return String.format(java.util.Locale.US, "%d %.2f", quantLatas, custoTotal);
     }
 }

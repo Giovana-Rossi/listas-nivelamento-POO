@@ -27,8 +27,8 @@ public class Ex07 {
     }
 
     double compute(int x, double v1, double v2, double a) {
-        double output = -0.1;
-        //put your logic here
-        return output;
+        if(a > x)
+            return v2*a;
+        return v1*a;
     }
 }

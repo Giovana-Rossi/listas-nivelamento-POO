@@ -28,8 +28,16 @@ public class Ex08 {
     }
 
     int compute(int n, int c) {
-        int output = -1;
-        //put your logic here
-        return output;
+        int cont=0;
+        int precoTotal=0;
+        int precoAtual = c;
+        while (cont<n)
+        {
+            precoTotal += precoAtual;
+            if(precoAtual > 1)
+                precoAtual--;
+            cont++;
+        }
+        return precoTotal;
     }
 }

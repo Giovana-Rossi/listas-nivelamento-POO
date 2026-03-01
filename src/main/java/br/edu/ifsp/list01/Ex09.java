@@ -25,8 +25,24 @@ public class Ex09 {
     }
 
     String compute(int[] input) {
-        String output = null;
-        //put your logic here
-        return output;
+        int quantMaiorIdade=0;
+        int quantIdosos=0;
+        int somaIdades=0;
+        int quantIdades=0;
+        for (int j : input)
+        {
+            if(j < 0)
+                break;
+            if(j>17)
+                quantMaiorIdade++;
+            if(j>75)
+                quantIdosos++;
+            quantIdades++;
+            somaIdades+= j;
+        }
+        double media = (double) somaIdades/quantIdades;
+        double porcentagemIdosos= ((double) quantIdosos/quantIdades) * 100;
+        return String.format(java.util.Locale.US, "%.2f %d %.2f%%", media, quantMaiorIdade, porcentagemIdosos);
+
     }
 }

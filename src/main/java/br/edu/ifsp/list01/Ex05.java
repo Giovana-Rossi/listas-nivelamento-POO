@@ -29,8 +29,11 @@ public class Ex05 {
     }
 
     String compute(int L, double m, double a, int v) {
-        String output =  null;
-        //put your logic here
-        return output;
+        if (v > L) {
+            double multa = m + a * (v - L);
+            return String.format(java.util.Locale.US, "%.2f", multa);
+        }
+        return "0.00";
+
     }
 }
