@@ -19,10 +19,10 @@ import java.util.Scanner;
 public class Ex03 {
 
     public static void main(String[] args) {
-//        final Scanner scanner = new Scanner(System.in);
-//        final Ex03 ex03 = new Ex03();
-//        int ano = scanner.nextInt();
-//        System.out.println();
+        final Scanner scanner = new Scanner(System.in);
+        final Ex03 ex03 = new Ex03();
+        int ano = scanner.nextInt();
+        System.out.println(ex03.compute(ano));
     }
 
 
